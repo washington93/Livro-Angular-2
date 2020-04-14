@@ -1,0 +1,7 @@
+<h2>
+    Ng For
+</h2>
+<button (click)="atualizar()">Atualizar</button>
+<ul *ngFor="let nome of nomes, let i=index; trackBy:meuSave">
+    <li>Nome do jogador é {{nome.nome}} (id:{{nome.id}}), seu indice é o {{i}}</li>
+</ul>
